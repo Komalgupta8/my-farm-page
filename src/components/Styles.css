@@ -1,0 +1,166 @@
+/* src/components/Farm.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3F8EFC;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px; /* Increased max-width for larger container */
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  }
+  
+  .form-box {
+    max-width: 900px; /* Increased width */
+    padding: 30px; /* Added padding */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin:  auto;
+    text-align: center;
+  }
+  
+  .form-box h2 {
+    margin-bottom: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 28px; /* Increased font size */
+  }
+  
+  .form-group {
+    position: relative;
+    margin-bottom: 40px; /* Increased margin-bottom for more spacing between fields */
+  }
+  
+  .input-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px; /* Adjusted padding */
+    border-radius: 8px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+   border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .form-group label {
+    position: absolute;
+    top: 0;
+    left: 20px; /* Adjusted to move labels further to the right */
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .form-group input:focus ~ label,
+  .form-group input:valid ~ label {
+    top: -15px;
+    left: 20px; /* Adjusted to move labels further to the right */
+    color: #03e9f4;
+    font-size: 14px;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    color: #03e9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+    transition: 0.5s;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background: #03e9f4;
+    color: #fff;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .form-box {
+      max-width: 100%;
+      padding: 20px;
+    }
+  
+    .form-box h2 {
+      font-size: 22px;
+    }
+  
+    .form-group input {
+      font-size: 14px;
+    }
+  
+    .form-group label {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  
+    .form-group {
+      margin-bottom: 25px;
+    }
+  
+    .input-box {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .form-box {
+      padding: 15px;
+    }
+  
+    .form-box h2 {
+      font-size: 20px;
+    }
+  
+    .form-group input {
+      font-size: 12px;
+    }
+  
+    .form-group label {
+      font-size: 12px;
+    }
+  
+    button {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+  
+    .form-group {
+      margin-bottom: 20px;
+    }
+  
+    .input-box {
+      padding: 8px;
+    }
+  }
